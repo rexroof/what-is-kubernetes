@@ -2,18 +2,18 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: kuard
-  name: kuard
+    app: demo-app
+  name: demo-app
 spec:
-  replicas: 1
+  replicas: 4
   selector:
     matchLabels:
-      app: kuard
+      app: demo-app
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: kuard
+        app: demo-app
     spec:
       containers:
       - image: gcr.io/kuar-demo/kuard-amd64:blue
