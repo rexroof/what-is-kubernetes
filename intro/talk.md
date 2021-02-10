@@ -130,4 +130,11 @@ everything I mentioned in this talk has exceptions.
 ---
 # kubernetes
 
-grand finale
+Things I didn't mention (that I probably should have)
+- ConfigMaps
+- Secrets
+- Namespaces
+
+demo time?
+
+

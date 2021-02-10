@@ -1,0 +1,75 @@
+k8s container orchestrator
+you can never learn it in 5 minutes
+but I'll introduce some of the concepts
+---
+first off,
+packaged software, contains all dependencies
+community of tools for developing containers
+docker is the kleenex term for containers
+--- 
+definition of kubernetes
+framework
+community ;)
+---
+get into the details:
+everything happens over api
+backed by etcd
+---
+kubectl 
+like curl 
+toolkit for interacting with api
+---
+all API interactions involve yaml somehow
+or tools that write yaml?
+there are always exceptions
+---
+it's all computers with different names
+abstractions can be confusing
+but powerful
+---
+machines = nodes
+vms, physical, even containers
+---
+pods are containers
+usually one, sometimes more
+kubernetes main function is run pods
+---
+you don't actually start pods
+defines desired state
+---
+deployments start pods for you
+currently the most common way to run pods
+---
+important to repeat
+you define what your software looks like, 
+kubernetes makes sure it happens
+finds the resources, runs the containers
+runs health checks
+---
+the kubernetes idea of scheduling
+each pod defines resources, (or assumptions)
+kubernetes controllers find nodes with resources
+and schedule your pods to run
+(pod containers stick together)
+---
+the way kubernetes identifies objects it manages
+is with labels, everything has labels
+--- 
+services are another abstraction inside kubernetes 
+for talking to your pods
+DNS and load balancing
+services use labels to find pods
+---
+services are a bit overloaded, 
+cloud load balancers
+---
+another abstraction around web server configs
+---
+build it how you want it
+or your opinionated cloud version of kubernetes
+---
+there are exceptions
+subvert
+---
+the end
+
